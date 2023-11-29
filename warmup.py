@@ -26,11 +26,11 @@ for line in input1:
     pos2 = int(nums[1]) - 1
     valid1 = string[pos1] == let
     valid2 = string[pos2] == let
-    print(pos1, pos2, let)
+    #print(pos1, pos2, let)
 
     if valid1 + valid2 == 1:
         valid += 1
-        print(string, "is valid")
-    else:
-        print(string, "is invalid")
+        #print(string, "is valid")
+    #else:
+        #print(string, "is invalid")
 print(valid)
