@@ -29,19 +29,16 @@ def string_to_numbers(string):
         "nine": "9"
     }
     outputstr = ""
-    i = 0
-    while i < len(string):
+    for i in range(len(string)):
         word_found = False
         for word in words:
             potential_word = string[i:i+len(word)]
             if potential_word == word:
                 outputstr += words[potential_word]
-                #i += len(word)
                 word_found = True
                 break
         if not word_found:
             outputstr += string[i]
-        i += 1
     return outputstr
 
 
